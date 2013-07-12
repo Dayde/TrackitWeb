@@ -1,0 +1,9 @@
+<div ng-controller="ProductController">
+    <ul>
+        <li>Identifier: {{ product.id }}</li>
+        <li>Barcode: <input type="text" ng-model="product.barcode"/></li>
+        <li>Title: <input type="text" ng-model="product.title"/></li>
+        <li>Additional information: <input type="text" ng-model="product.info"/></li>
+    </ul>
+    <button ng-click="saveProduct()">Save</button>
+</div>

@@ -1,0 +1,20 @@
+<div ng-controller="ProductsController" >
+    <table>
+        <thead>
+        <th>Identifier</th>
+        <th>Title</th>
+        <th>Info</th>
+        <th>Barcode</th>
+        <th>Action</th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="product in productsList">
+            <td><a ng-href="#/product/{{ product.id }}">{{product.id}}</a></td>
+            <td>{{product.title}}</td>
+            <td>{{product.info}}</td>
+            <td>{{product.barcode}}</td>
+            <td><input type="button" ng-click="removeProduct({{ product }})" value="Remove"/></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

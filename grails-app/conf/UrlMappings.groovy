@@ -10,8 +10,8 @@ class UrlMappings {
 		}
 
         // REST
-        "/product"(controller: 'product', action: 'index')
-        "/product/$id?"(resource: 'product')
+        "/api/product"(controller: 'product', action: 'index')
+        "/api/product/$id?"(resource: 'product')
 
 		"/"(view:"/index")
 		"500"(view:'/error')
